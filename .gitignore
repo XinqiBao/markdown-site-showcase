@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.DS_Store
+
+sites/vitepress/docs/*
+!sites/vitepress/docs/.vitepress/
+!sites/vitepress/docs/.vitepress/**
+
+sites/starlight/node_modules/
+sites/starlight/dist/
+sites/starlight/.astro/
+sites/starlight/src/content/docs/
+
+sites/quartz/node_modules/
+sites/quartz/public/
+sites/quartz/content/
