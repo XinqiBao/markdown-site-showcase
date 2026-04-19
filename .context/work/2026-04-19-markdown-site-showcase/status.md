@@ -11,6 +11,7 @@ Date: 2026-04-19
 - deployment workflow succeeded on run `24631642879`
 - local `npm run verify` passes
 - public routes return `HTTP 200`
+- historical first-round comparison docs have been imported into `.context/archive/`
 - public URLs:
   - [Root landing page](https://xinqibao.github.io/markdown-site-showcase/)
   - [VitePress demo](https://xinqibao.github.io/markdown-site-showcase/vitepress/)

@@ -13,3 +13,8 @@ Markdown site showcase.
 
 Stable repository documentation lives in `docs/`. Use `.context/` only for
 active local continuity and current state.
+
+## Archive
+
+Historical planning material imported from superseded repositories or workspaces
+lives under `.context/archive/`.
