@@ -1,26 +1,48 @@
 # Markdown Site Showcase
 
-Single-repository demo that publishes one canonical Markdown source into three
-static-site presentations on one GitHub Pages site:
+[![Deploy GitHub Pages](https://github.com/XinqiBao/markdown-site-showcase/actions/workflows/deploy.yml/badge.svg)](https://github.com/XinqiBao/markdown-site-showcase/actions/workflows/deploy.yml)
 
-- `/`
-- `/vitepress/`
-- `/starlight/`
-- `/quartz/`
+One repository, one Markdown source tree, three static-site presentations.
 
-## Purpose
+## Live Site
+
+- [Root landing page](https://xinqibao.github.io/markdown-site-showcase/)
+- [VitePress demo](https://xinqibao.github.io/markdown-site-showcase/vitepress/)
+- [Starlight demo](https://xinqibao.github.io/markdown-site-showcase/starlight/)
+- [Quartz demo](https://xinqibao.github.io/markdown-site-showcase/quartz/)
+
+## Why This Repo Exists
 
 This repository is a maintenance-first example for comparing Markdown site
-generators without maintaining separate content copies.
+generators without maintaining separate content copies or separate GitHub Pages
+repositories.
 
-## Planned Structure
+The goal is not to prove a permanent winner. The goal is to show what happens
+when the same content source is rendered through three different default
+browsing models.
+
+## What It Publishes
+
+- `/`: a lightweight landing page for comparison
+- `/vitepress/`: a docs-first view
+- `/starlight/`: a handbook-style view
+- `/quartz/`: a knowledge-garden view
+
+## Repository Guide
 
 - `content/`: canonical Markdown source
 - `config/`: shared repository and navigation metadata
-- `scripts/`: sync and landing-page generation scripts
-- `sites/`: VitePress, Starlight, and Quartz apps
-- `docs/`: public architecture and authoring notes
+- `scripts/`: sync and assembly scripts
+- `sites/`: framework-specific apps
+- `docs/`: public architecture, authoring, and decision notes
 - `.context/`: local continuity files for active work
+
+## Workflow
+
+1. Edit content in `content/`.
+2. Run `npm run verify`.
+3. Review the assembled `dist/` output.
+4. Push to `main` to publish through GitHub Pages.
 
 ## Key Commands
 
@@ -29,12 +51,9 @@ generators without maintaining separate content copies.
 - `npm run build`
 - `npm run verify`
 
-## Public URL
+## Further Reading
 
-- `https://xinqibao.github.io/markdown-site-showcase/`
-
-## Local Notes
-
-- Edit Markdown in `content/`.
-- VitePress and Starlight receive generated content copies during sync.
-- Quartz reads the canonical `content/` tree directly during build.
+- [Docs Index](docs/README.md)
+- [Architecture](docs/architecture.md)
+- [Authoring](docs/authoring.md)
+- [Decisions](docs/decisions.md)
