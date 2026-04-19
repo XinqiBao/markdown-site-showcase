@@ -4,7 +4,11 @@ dist/
 
 sites/vitepress/docs/*
 !sites/vitepress/docs/.vitepress/
-!sites/vitepress/docs/.vitepress/**
+sites/vitepress/docs/.vitepress/*
+!sites/vitepress/docs/.vitepress/config.mts
+!sites/vitepress/docs/.vitepress/theme/
+sites/vitepress/docs/.vitepress/theme/*
+!sites/vitepress/docs/.vitepress/theme/index.ts
 
 sites/starlight/node_modules/
 sites/starlight/dist/
@@ -14,3 +18,4 @@ sites/starlight/src/content/docs/
 sites/quartz/node_modules/
 sites/quartz/public/
 sites/quartz/content/
+sites/quartz/quartz/.quartz-cache/
