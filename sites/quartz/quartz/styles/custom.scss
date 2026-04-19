@@ -1,0 +1,11 @@
+@use "./base.scss";
+
+.page-title {
+  letter-spacing: -0.02em;
+}
+
+.popover-hint,
+.backlinks h3,
+.graph h3 {
+  letter-spacing: 0.02em;
+}

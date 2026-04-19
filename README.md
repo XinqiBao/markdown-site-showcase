@@ -3,6 +3,7 @@
 Single-repository demo that publishes one canonical Markdown source into three
 static-site presentations on one GitHub Pages site:
 
+- `/`
 - `/vitepress/`
 - `/starlight/`
 - `/quartz/`
@@ -24,5 +25,12 @@ generators without maintaining separate content copies.
 ## Key Commands
 
 - `npm test`
+- `npm run sync-content`
 - `npm run build`
 - `npm run verify`
+
+## Local Notes
+
+- Edit Markdown in `content/`.
+- VitePress and Starlight receive generated content copies during sync.
+- Quartz reads the canonical `content/` tree directly during build.

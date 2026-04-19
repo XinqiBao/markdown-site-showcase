@@ -6,12 +6,16 @@ Date: 2026-04-19
 ## Current State
 
 - repository initialized locally
-- public documentation skeleton written
-- local continuity entrypoint written
-- next step is to drive the shared pipeline with failing tests
+- public documentation and local continuity entrypoints written
+- shared content pipeline implemented with automated tests
+- canonical Markdown content written
+- VitePress, Starlight, and Quartz sub-sites wired into one build flow
+- local `npm test` passes
+- local `npm run build` passes
+- next step is creating the remote GitHub repository and enabling Pages
 
 ## Next Exact Task
 
-Run the initial Node tests, observe the expected failures for the missing shared
-metadata and landing-page modules, then implement the minimum code to satisfy
-them.
+Create `XinqiBao/markdown-site-showcase`, push the local `main` branch, and
+verify the GitHub Pages workflow publishes the root landing page plus the three
+sub-site paths.

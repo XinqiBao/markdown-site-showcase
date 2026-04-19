@@ -1,0 +1,15 @@
+{
+  "name": "@showcase/vitepress",
+  "private": true,
+  "version": "0.1.0",
+  "description": "VitePress presentation for the Markdown Site Showcase",
+  "scripts": {
+    "dev": "vitepress dev docs --host 127.0.0.1 --port 4173",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --host 127.0.0.1 --port 4173"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
