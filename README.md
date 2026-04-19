@@ -29,6 +29,10 @@ generators without maintaining separate content copies.
 - `npm run build`
 - `npm run verify`
 
+## Public URL
+
+- `https://xinqibao.github.io/markdown-site-showcase/`
+
 ## Local Notes
 
 - Edit Markdown in `content/`.
