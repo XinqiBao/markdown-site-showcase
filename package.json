@@ -1,0 +1,23 @@
+{
+  "name": "markdown-site-showcase",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "sites/vitepress",
+    "sites/starlight",
+    "sites/quartz"
+  ],
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "test": "node --test",
+    "sync-content": "node scripts/sync-content.mjs",
+    "build:landing": "node scripts/build-landing-page.mjs",
+    "build:vitepress": "npm run build --workspace @showcase/vitepress",
+    "build:starlight": "npm run build --workspace @showcase/starlight",
+    "build:quartz": "npm run build --workspace @showcase/quartz",
+    "assemble-dist": "node scripts/assemble-dist.mjs",
+    "build": "npm run clean && npm run sync-content && npm run build:vitepress && npm run build:starlight && npm run build:quartz && npm run assemble-dist && npm run build:landing",
+    "verify": "npm run test && npm run build"
+  }
+}
