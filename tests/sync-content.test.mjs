@@ -8,7 +8,7 @@ import { syncCanonicalContent } from '../lib/sync-content.mjs'
 
 test('syncCanonicalContent copies Markdown while preserving VitePress config', async () => {
   const root = await mkdtemp(join(tmpdir(), 'markdown-site-showcase-'))
-  const contentRoot = join(root, 'content')
+  const contentRoot = join(root, 'shared-content')
   const vitepressConfigRoot = join(root, 'sites/vitepress/docs/.vitepress')
 
   await mkdir(join(contentRoot, 'concepts'), { recursive: true })
@@ -38,5 +38,9 @@ test('syncCanonicalContent copies Markdown while preserving VitePress config', a
   assert.equal(
     await readFile(join(root, 'sites/quartz/content/index.md'), 'utf8'),
     '# Start\n',
+  )
+  assert.equal(
+    await readFile(join(root, 'sites/quartz/content/concepts/content-model.md'), 'utf8'),
+    '# Content Model\n',
   )
 })

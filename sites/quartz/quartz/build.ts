@@ -13,7 +13,7 @@ import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
 import { Argv, BuildCtx } from "./util/ctx"
-import { glob, toPosixPath } from "./util/glob"
+import { glob, shouldUseGitIgnore, toPosixPath } from "./util/glob"
 import { trace } from "./util/trace"
 import { options } from "./util/sourcemap"
 import { Mutex } from "async-mutex"
@@ -120,7 +120,7 @@ async function startWatching(
     })
   }
 
-  const gitIgnoredMatcher = await isGitIgnored()
+  const gitIgnoredMatcher = shouldUseGitIgnore() ? await isGitIgnored() : () => false
   const buildData: BuildData = {
     ctx,
     mut,

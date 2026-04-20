@@ -15,6 +15,19 @@ const defaultOptions: Options = {
 // YYYY-MM-DD
 const iso8601DateOnlyRegex = /^\d{4}-\d{2}-\d{2}$/
 
+function resolveGitSourcePath(fullFilePath: string, localContentRoot: string, gitSourceRoot?: string) {
+  if (!gitSourceRoot) {
+    return fullFilePath
+  }
+
+  const relativePath = path.relative(localContentRoot, fullFilePath)
+  if (relativePath.startsWith("..")) {
+    return fullFilePath
+  }
+
+  return path.join(gitSourceRoot, relativePath)
+}
+
 function coerceDate(fp: string, d: any): Date {
   // check ISO8601 date-only format
   // we treat this one as local midnight as the normal
@@ -47,9 +60,13 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
         () => {
           let repo: Repository | undefined = undefined
           let repositoryWorkdir: string
+          const localContentRoot = path.resolve(process.cwd(), ctx.argv.directory)
+          const gitSourceRoot = process.env.QUARTZ_GIT_SOURCE
+            ? path.resolve(process.cwd(), process.env.QUARTZ_GIT_SOURCE)
+            : undefined
           if (opts.priority.includes("git")) {
             try {
-              repo = Repository.discover(ctx.argv.directory)
+              repo = Repository.discover(gitSourceRoot ?? ctx.argv.directory)
               repositoryWorkdir = repo.workdir() ?? ctx.argv.directory
             } catch (e) {
               console.log(
@@ -79,7 +96,8 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
                 published ||= file.data.frontmatter.published as MaybeDate
               } else if (source === "git" && repo) {
                 try {
-                  const relativePath = path.relative(repositoryWorkdir, fullFp)
+                  const gitSourcePath = resolveGitSourcePath(fullFp, localContentRoot, gitSourceRoot)
+                  const relativePath = path.relative(repositoryWorkdir, gitSourcePath)
                   modified ||= await repo.getFileLatestModifiedDateAsync(relativePath)
                 } catch {
                   console.log(

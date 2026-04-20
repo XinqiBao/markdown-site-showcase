@@ -15,7 +15,7 @@ Why:
 
 ## One Canonical Content Tree
 
-Use `content/` as the source of truth.
+Use `shared-content/` as the source of truth.
 
 Why:
 
@@ -33,14 +33,24 @@ Why:
 - framework defaults should stay visible
 - less custom code means lower maintenance cost
 
-## Mixed Integration Model
+## Synced Site Inputs
 
-VitePress and Starlight consume generated copies. Quartz builds from the
-canonical source directly.
+All site demos consume synced local copies of the canonical tree.
 
 Why:
 
-- VitePress and Starlight work more naturally with framework-native content roots
-- Quartz respects `gitignore` during file discovery, so generated content roots
-  are brittle there
-- reading canonical content directly is the smallest reliable fix for Quartz
+- keeps the repository mental model uniform across demos
+- lets each site workspace preserve its framework-native content layout
+- keeps authoring isolated to one canonical tree while keeping site-local inputs
+  explicit
+
+## Narrow Quartz Override
+
+Keep a small Quartz-specific override that disables gitignore filtering for the
+site-local input copy.
+
+Why:
+
+- Quartz otherwise filters out ignored generated inputs during content discovery
+- the override is smaller than restructuring the repository around Quartz alone
+- the custom behavior stays isolated to the local Quartz workspace

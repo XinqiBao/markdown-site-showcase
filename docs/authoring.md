@@ -1,9 +1,9 @@
 # Authoring
 
-Edit Markdown only in `content/`.
+Edit Markdown only in `shared-content/`.
 
 Do not hand-edit generated copies inside `sites/`. Those directories are
-rebuilt by the sync script or bypassed entirely in the Quartz build.
+rebuilt by the sync script before each build.
 
 ## Content Rules
 
@@ -14,6 +14,6 @@ rebuilt by the sync script or bypassed entirely in the Quartz build.
 
 ## Generator Boundary
 
-- VitePress and Starlight depend on generated copies because their default
-  source layouts are stricter.
-- Quartz reads the canonical content tree directly via its build flag.
+- All current site demos build from synced local copies.
+- Quartz disables gitignore-based input filtering in this repository so its
+  ignored generated copy can still be treated as a build input.

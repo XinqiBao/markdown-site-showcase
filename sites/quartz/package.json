@@ -13,8 +13,8 @@
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
-    "dev": "npx quartz build --serve -d ../../content",
-    "build": "npx quartz build -d ../../content",
+    "dev": "QUARTZ_GIT_SOURCE=../../shared-content QUARTZ_USE_GITIGNORE=false npx quartz build --serve -d content",
+    "build": "QUARTZ_GIT_SOURCE=../../shared-content QUARTZ_USE_GITIGNORE=false npx quartz build -d content",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",

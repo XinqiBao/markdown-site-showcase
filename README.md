@@ -30,7 +30,7 @@ browsing models.
 
 ## Repository Guide
 
-- `content/`: canonical Markdown source
+- `shared-content/`: canonical shared Markdown source
 - `config/`: shared repository and navigation metadata
 - `scripts/`: sync and assembly scripts
 - `sites/`: framework-specific apps
@@ -39,7 +39,7 @@ browsing models.
 
 ## Workflow
 
-1. Edit content in `content/`.
+1. Edit content in `shared-content/`.
 2. Run `npm run verify`.
 3. Review the assembled `dist/` output.
 4. Push to `main` to publish through GitHub Pages.
