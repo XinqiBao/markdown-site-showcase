@@ -7,7 +7,7 @@ Markdown site showcase.
 
 ## Default Read Path
 
-1. `work/2026-04-19-markdown-site-showcase/README.md`
+1. `work/2026-04-20-showcase-expansion/README.md`
 
 ## Public Counterpart
 
