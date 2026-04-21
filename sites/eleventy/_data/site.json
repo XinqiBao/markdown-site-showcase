@@ -1,0 +1,12 @@
+{
+  "title": "Eleventy",
+  "description": "Low-lock-in static output from the shared Markdown source.",
+  "nav": [
+    { "label": "Start Here", "href": "/" },
+    { "label": "Concepts", "href": "/concepts/" },
+    { "label": "Workflows", "href": "/workflows/" },
+    { "label": "Architecture", "href": "/architecture/" },
+    { "label": "Reference", "href": "/reference/" }
+  ],
+  "github": "https://github.com/XinqiBao/markdown-site-showcase"
+}

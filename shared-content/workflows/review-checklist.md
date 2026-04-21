@@ -7,8 +7,8 @@ description: A quick pass before you treat a build as ready to publish.
 
 Before pushing:
 
-- confirm the changed page exists under all three generated site roots
-- confirm the three builds finish without broken asset paths
+- confirm the changed page exists under every generated site root
+- confirm the site builds finish without broken asset paths
 - confirm the root landing page links to every sub-site
 - open a few cross-links to make sure relative Markdown links resolve cleanly
 

@@ -31,6 +31,12 @@ test('renderLandingPage links to each generated sub-site', () => {
         href: '/markdown-site-showcase/docusaurus/',
         description: 'Product docs',
       },
+      {
+        id: 'eleventy',
+        name: 'Eleventy',
+        href: '/markdown-site-showcase/eleventy/',
+        description: 'Low-lock-in static site',
+      },
     ],
   })
 
@@ -38,5 +44,6 @@ test('renderLandingPage links to each generated sub-site', () => {
   assert.match(html, /href="\/markdown-site-showcase\/starlight\/"/)
   assert.match(html, /href="\/markdown-site-showcase\/quartz\/"/)
   assert.match(html, /href="\/markdown-site-showcase\/docusaurus\/"/)
+  assert.match(html, /href="\/markdown-site-showcase\/eleventy\/"/)
   assert.match(html, /One shared Markdown source, multiple reading models/)
 })

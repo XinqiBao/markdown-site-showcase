@@ -6,8 +6,8 @@ description: The day-to-day editing and review loop for the shared Markdown sour
 # Workflows Hub
 
 The workflow is optimized for low maintenance. Edit content once, sync it into
-the three site roots, run the builds, and review the generated output rather
-than maintaining three parallel content trees.
+the site roots, run the builds, and review the generated output rather than
+maintaining parallel content trees.
 
 ## Start Here
 

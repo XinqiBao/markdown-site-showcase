@@ -1,6 +1,6 @@
 ---
 title: Link Patterns
-description: Linking conventions that stay stable across the three site generators.
+description: Linking conventions that stay stable across the site generators.
 ---
 
 # Link Patterns

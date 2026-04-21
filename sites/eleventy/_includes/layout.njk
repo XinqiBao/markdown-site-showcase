@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.title }} · Markdown Site Showcase</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/site.css' | url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | url }}">{{ site.title }}</a>
+      <nav aria-label="Primary">
+        {% for item in site.nav %}
+          <a href="{{ item.href | url }}">{{ item.label }}</a>
+        {% endfor %}
+        <a href="{{ site.github }}">GitHub</a>
+      </nav>
+    </header>
+    <main class="page">
+      {{ content | safe }}
+    </main>
+    <footer class="site-footer">
+      Built from the shared Markdown source with a deliberately small Eleventy layer.
+    </footer>
+  </body>
+</html>

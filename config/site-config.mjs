@@ -22,6 +22,11 @@ const demos = [
     name: 'Docusaurus',
     description: 'Product-docs defaults with versioning and team-scale structure.',
   },
+  {
+    id: 'eleventy',
+    name: 'Eleventy',
+    description: 'Low-lock-in static output with intentionally minimal framework assumptions.',
+  },
 ]
 
 const topNav = [

@@ -1,11 +1,11 @@
 ---
 title: Markdown Site Showcase
-description: Compare one Markdown source across VitePress, Starlight, and Quartz.
+description: Compare one Markdown source across multiple static-site generators.
 ---
 
 # Markdown Site Showcase
 
-This repository turns one canonical Markdown tree into three public reading
+This repository turns one canonical Markdown tree into multiple public reading
 models. The content is intentionally plain so the comparison stays focused on
 navigation, defaults, and maintenance cost instead of custom design work.
 

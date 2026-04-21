@@ -11,6 +11,7 @@ One repository, one shared Markdown tree, multiple static-site presentations.
 - [Starlight demo](https://xinqibao.github.io/markdown-site-showcase/starlight/)
 - [Quartz demo](https://xinqibao.github.io/markdown-site-showcase/quartz/)
 - [Docusaurus demo](https://xinqibao.github.io/markdown-site-showcase/docusaurus/)
+- [Eleventy demo](https://xinqibao.github.io/markdown-site-showcase/eleventy/)
 
 ## Why This Repo Exists
 
@@ -29,6 +30,7 @@ models.
 - `/starlight/`: a handbook-style view
 - `/quartz/`: a knowledge-garden view
 - `/docusaurus/`: a product-docs view
+- `/eleventy/`: a low-lock-in static-site view
 
 ## Repository Guide
 

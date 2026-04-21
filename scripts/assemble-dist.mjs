@@ -17,6 +17,10 @@ const copies = [
     target: join(repoRoot, 'dist/docusaurus'),
   },
   {
+    source: join(repoRoot, 'sites/eleventy/_site'),
+    target: join(repoRoot, 'dist/eleventy'),
+  },
+  {
     source: join(repoRoot, 'sites/quartz/public'),
     target: join(repoRoot, 'dist/quartz'),
   },

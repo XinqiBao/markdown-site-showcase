@@ -7,9 +7,9 @@ description: The shortest reliable path from Markdown edit to published comparis
 
 Use this sequence:
 
-1. Edit or add a page in `content/`.
+1. Edit or add a page in `shared-content/`.
 2. Run the sync step so each site gets a fresh generated copy.
-3. Build the landing page and the three static sites.
+3. Build the landing page and the site demos.
 4. Check the assembled `dist/` output locally.
 5. Push once and let GitHub Pages publish the whole artifact.
 

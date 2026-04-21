@@ -5,8 +5,8 @@ description: The authoring rules that keep one Markdown source usable everywhere
 
 # Content Model
 
-The canonical source lives in `content/` and uses only the Markdown features
-that all three generators handle cleanly:
+The canonical source lives in `shared-content/` and uses only the Markdown
+features that all current generators handle cleanly:
 
 - short frontmatter with titles and descriptions
 - relative links between pages
