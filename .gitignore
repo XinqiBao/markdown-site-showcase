@@ -19,3 +19,8 @@ sites/quartz/node_modules/
 sites/quartz/public/
 sites/quartz/content/
 sites/quartz/quartz/.quartz-cache/
+
+sites/docusaurus/node_modules/
+sites/docusaurus/build/
+sites/docusaurus/.docusaurus/
+sites/docusaurus/docs/

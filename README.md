@@ -2,7 +2,7 @@
 
 [![Deploy GitHub Pages](https://github.com/XinqiBao/markdown-site-showcase/actions/workflows/deploy.yml/badge.svg)](https://github.com/XinqiBao/markdown-site-showcase/actions/workflows/deploy.yml)
 
-One repository, one Markdown source tree, three static-site presentations.
+One repository, one shared Markdown tree, multiple static-site presentations.
 
 ## Live Site
 
@@ -10,6 +10,7 @@ One repository, one Markdown source tree, three static-site presentations.
 - [VitePress demo](https://xinqibao.github.io/markdown-site-showcase/vitepress/)
 - [Starlight demo](https://xinqibao.github.io/markdown-site-showcase/starlight/)
 - [Quartz demo](https://xinqibao.github.io/markdown-site-showcase/quartz/)
+- [Docusaurus demo](https://xinqibao.github.io/markdown-site-showcase/docusaurus/)
 
 ## Why This Repo Exists
 
@@ -18,8 +19,8 @@ generators without maintaining separate content copies or separate GitHub Pages
 repositories.
 
 The goal is not to prove a permanent winner. The goal is to show what happens
-when the same content source is rendered through three different default
-browsing models.
+when the same content source is rendered through multiple default browsing
+models.
 
 ## What It Publishes
 
@@ -27,6 +28,7 @@ browsing models.
 - `/vitepress/`: a docs-first view
 - `/starlight/`: a handbook-style view
 - `/quartz/`: a knowledge-garden view
+- `/docusaurus/`: a product-docs view
 
 ## Repository Guide
 

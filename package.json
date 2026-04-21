@@ -6,7 +6,8 @@
   "workspaces": [
     "sites/vitepress",
     "sites/starlight",
-    "sites/quartz"
+    "sites/quartz",
+    "sites/docusaurus"
   ],
   "scripts": {
     "clean": "node scripts/clean.mjs",
@@ -15,9 +16,13 @@
     "build:landing": "node scripts/build-landing-page.mjs",
     "build:vitepress": "npm run build --workspace @showcase/vitepress",
     "build:starlight": "npm run build --workspace @showcase/starlight",
+    "build:docusaurus": "npm run build --workspace @showcase/docusaurus",
     "build:quartz": "npm run build --workspace @showcase/quartz",
     "assemble-dist": "node scripts/assemble-dist.mjs",
-    "build": "npm run clean && npm run sync-content && npm run build:vitepress && npm run build:starlight && npm run build:quartz && npm run assemble-dist && npm run build:landing",
+    "build": "npm run clean && npm run sync-content && npm run build:vitepress && npm run build:starlight && npm run build:docusaurus && npm run build:quartz && npm run assemble-dist && npm run build:landing",
     "verify": "npm run test && npm run build"
+  },
+  "devDependencies": {
+    "webpack": "^5.95.0"
   }
 }

@@ -15,5 +15,7 @@ rebuilt by the sync script before each build.
 ## Generator Boundary
 
 - All current site demos build from synced local copies.
+- Docusaurus joins VitePress and Starlight in consuming a framework-native docs
+  directory.
 - Quartz disables gitignore-based input filtering in this repository so its
   ignored generated copy can still be treated as a build input.

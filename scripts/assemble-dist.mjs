@@ -13,6 +13,10 @@ const copies = [
     target: join(repoRoot, 'dist/starlight'),
   },
   {
+    source: join(repoRoot, 'sites/docusaurus/build'),
+    target: join(repoRoot, 'dist/docusaurus'),
+  },
+  {
     source: join(repoRoot, 'sites/quartz/public'),
     target: join(repoRoot, 'dist/quartz'),
   },

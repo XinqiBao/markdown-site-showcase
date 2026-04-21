@@ -17,6 +17,11 @@ const demos = [
     name: 'Quartz',
     description: 'Knowledge-garden browsing with backlinks and graph views.',
   },
+  {
+    id: 'docusaurus',
+    name: 'Docusaurus',
+    description: 'Product-docs defaults with versioning and team-scale structure.',
+  },
 ]
 
 const topNav = [
@@ -85,6 +90,6 @@ export const sharedSiteConfig = {
   topNav,
   sections,
   repoTitle: 'Markdown Site Showcase',
-  tagline: 'One Markdown source, three reading models',
-  repoDescription: 'A maintenance-first demo for publishing one Markdown source as VitePress, Starlight, and Quartz.',
+  tagline: 'One shared Markdown source, multiple reading models',
+  repoDescription: 'A maintenance-first demo for publishing one shared Markdown source through multiple static-site generators.',
 }

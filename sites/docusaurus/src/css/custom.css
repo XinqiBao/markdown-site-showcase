@@ -1,0 +1,22 @@
+:root {
+  --ifm-color-primary: #8a4d2c;
+  --ifm-color-primary-dark: #7b4528;
+  --ifm-color-primary-darker: #744124;
+  --ifm-color-primary-darkest: #60351e;
+  --ifm-color-primary-light: #995530;
+  --ifm-color-primary-lighter: #a35934;
+  --ifm-color-primary-lightest: #b7663c;
+  --ifm-background-color: #fbfaf6;
+  --ifm-font-family-base: "Source Sans 3", "Helvetica Neue", sans-serif;
+  --ifm-heading-font-family: "Fraunces", Georgia, serif;
+  --ifm-code-font-size: 95%;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(45, 42, 38, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.theme-doc-markdown header h1 {
+  letter-spacing: -0.02em;
+}

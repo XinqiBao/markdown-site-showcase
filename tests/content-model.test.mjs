@@ -12,7 +12,8 @@ test('loadSiteConfig exposes repository and demo metadata', async () => {
   assert.equal(config.siteUrl, 'https://xinqibao.github.io')
   assert.deepEqual(
     config.demos.map((demo) => demo.id),
-    ['vitepress', 'starlight', 'quartz'],
+    ['vitepress', 'starlight', 'quartz', 'docusaurus'],
   )
   assert.equal(config.getDemoBasePath('starlight'), '/markdown-site-showcase/starlight/')
+  assert.equal(config.getDemoBasePath('docusaurus'), '/markdown-site-showcase/docusaurus/')
 })

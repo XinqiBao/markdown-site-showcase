@@ -43,4 +43,8 @@ test('syncCanonicalContent copies Markdown while preserving VitePress config', a
     await readFile(join(root, 'sites/quartz/content/concepts/content-model.md'), 'utf8'),
     '# Content Model\n',
   )
+  assert.equal(
+    await readFile(join(root, 'sites/docusaurus/docs/index.md'), 'utf8'),
+    '# Start\n',
+  )
 })

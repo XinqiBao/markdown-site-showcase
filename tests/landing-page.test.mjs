@@ -25,11 +25,18 @@ test('renderLandingPage links to each generated sub-site', () => {
         href: '/markdown-site-showcase/quartz/',
         description: 'Knowledge garden',
       },
+      {
+        id: 'docusaurus',
+        name: 'Docusaurus',
+        href: '/markdown-site-showcase/docusaurus/',
+        description: 'Product docs',
+      },
     ],
   })
 
   assert.match(html, /href="\/markdown-site-showcase\/vitepress\/"/)
   assert.match(html, /href="\/markdown-site-showcase\/starlight\/"/)
   assert.match(html, /href="\/markdown-site-showcase\/quartz\/"/)
-  assert.match(html, /One Markdown source, three reading models/)
+  assert.match(html, /href="\/markdown-site-showcase\/docusaurus\/"/)
+  assert.match(html, /One shared Markdown source, multiple reading models/)
 })
