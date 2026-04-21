@@ -7,6 +7,8 @@ of the active implementation path but may still be useful for reference.
 
 - `2026-04-16-agent-playbook-static-site-demos/`: first-round comparison packet
   from the deleted multi-repo workspace
+- `2026-04-19-markdown-site-showcase-initial-launch/`: initial single-repository
+  launch packet before the Docusaurus and Eleventy expansion
 
 ## Use
 
